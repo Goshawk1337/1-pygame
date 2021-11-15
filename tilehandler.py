@@ -1,19 +1,30 @@
-import pygame
-import texture
+import pygame as pyg
 
-class tile:
-    def __innit__(Tile,texture,posx,posy,posz,solid):
-        Tile.texture = texture
-        Tile.posx = posx
-        Tile.posy = posy
-        Tile.posz = posz
-        Tile.solid = solid
-        if tile.solid == 1:
-            pygame.sprite.spritecollide()
-        elif tile.solid == -1:
-            pygame.sprite.spritecollideany()
-        else:
-            pass
+class TileHandler:
+    def __init__(self,texture,posx,posy,posz):
+        for self.texture in texture:
+            pyg.sprite.__loader__()
+        pass
+    def Ground():
+        pass
+    def ForeGround():
+        pass
+    def HindGround():
+        pass
 
-
+class CollisionHandler:
+    def __init__(self):
+        pass
+    def Solid():
+        pass
+    def Spiky():
+        pass
+    def Halfmassive():
+        pass
+    def Slippery():
+        pass
+    def Ladder():
+        pass
+    def Liquid():
+        pass
         
